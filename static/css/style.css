@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: tahoma;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    padding: 50px 0px  0px 0px;
+    text-align: center;
+}
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
+
+h1, p {
+    margin: 20px 0px 0px 0px;
+}
+
+input[type='submit'] {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 15px 10px 0px 10px;
+}
+
+form {
+    display: inline-block;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <title>Counter Application</title>
+    </head>
+    <body>
+        <h1>Counter</h1>
+        <p>{{times}} : times</p>
+        <form action="/inc2Reset" method="post">
+            <input type="hidden" name="action" value="add2">
+            <a href="" class="inactiveLink"><input name="+2" id="submit" type="submit">+2</a>
+        </form>
+        <form action="/inc2Reset" method="post">
+            <input type="hidden" name="action" value="reset">
+            <a href="" class="inactiveLink"><input name="reset" id="submit" type="submit">Reset</a>
+        </form>
+    </body>
+</html>
